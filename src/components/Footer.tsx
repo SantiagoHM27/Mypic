@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer style={{ backgroundColor: '#333', color: '#fff', textAlign: 'center', padding: '10px' }}>
-      <p>© 2025 Mi Sitio Web</p>
+    <footer style={{ background: '#eee', padding: '10px', textAlign: 'center' }}>
+      © 2025 MyPic App
     </footer>
   )
 }
