@@ -9,8 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-     <div style={{ paddingTop: '100px', paddingBottom: '130px', minHeight: 'calc(100vh - 230px)' }}>
-
+      <div style={{ paddingTop: '100px', paddingBottom: '130px', minHeight: 'calc(100vh - 230px)' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
