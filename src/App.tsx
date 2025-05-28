@@ -9,13 +9,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <main style={{ minHeight: '80vh', padding: '20px' }}>
+     <div style={{ paddingTop: '100px', paddingBottom: '130px', minHeight: 'calc(100vh - 230px)' }}>
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </main>
+      </div>
       <Footer />
     </>
   )

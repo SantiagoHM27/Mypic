@@ -1,9 +1,5 @@
 function Footer() {
-  return (
-    <footer style={{ background: '#eee', padding: '10px', textAlign: 'center' }}>
-      © 2025 MyPic App
-    </footer>
-  )
+  return <footer>© 2025 MyPic. Todos los derechos reservados.</footer>
 }
 
 export default Footer
