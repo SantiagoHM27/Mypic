@@ -1,0 +1,171 @@
+/* Reset y configuración base */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Navbar arriba a la derecha */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar a {
+  padding: 10px 18px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  background-color: #555;
+}
+
+/* Slider automático */
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 100px auto 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slider-track {
+  display: flex;
+  width: calc(800px * 3);
+  animation: slide 12s infinite;
+}
+
+.slider-track img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-800px); }
+  66% { transform: translateX(-1600px); }
+  100% { transform: translateX(0); }
+}
+
+/* Footer con más altura */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* src/index.css (o tu archivo CSS global) */
+
+/* Estilos para el componente About */
+.aboutContainer {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutContainer .title { /* Puedes anidar o usar clases directas */
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.aboutContainer .intro,
+.aboutContainer .outro {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.aboutContainer .section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border-left: 4px solid #3498db; /* Un acento de color */
+  border-radius: 4px;
+}
+
+.aboutContainer .subtitle {
+  color: #3498db;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.aboutContainer .list {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.aboutContainer .list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee; /* Separador suave */
+  display: flex;
+  align-items: center;
+}
+
+.aboutContainer .list li::before {
+  content: '✔'; /* Puedes usar un ícono SVG o de fuente aquí */
+  color: #2ecc71; /* Color del "check" */
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.aboutContainer .list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .aboutContainer {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .aboutContainer .title {
+    font-size: 2em;
+  }
+
+  .aboutContainer .subtitle {
+    font-size: 1.5em;
+  }
+}
+
+/* Aquí también irían otros estilos globales de tu aplicación */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
