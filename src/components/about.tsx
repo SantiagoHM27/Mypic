@@ -19,7 +19,7 @@ export default function About() {
         {/* Imagen a la derecha */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="/src/Logo de mypic.png"
+            src="/src/about.png"
             alt="Equipo"
             className="rounded-xl shadow-xl w-full max-w-md"
           />
